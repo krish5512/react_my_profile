@@ -1,0 +1,389 @@
+.large-header {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    background: #111;
+    overflow: visible;
+    overflow-x: hidden;
+    background-size: 100% 100%;
+    background-position: center center;
+    z-index: 1;
+  }
+  
+  .demo .large-header {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
+  }
+  
+  .main-title {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: #F9F1E9;
+    text-align: center;
+    top: 10%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 4.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  .demo .main-title {
+    text-transform: uppercase;
+    font-size: 4.2em;
+    letter-spacing: 0.1em;
+  }
+  
+  .main-title .thin {
+    font-weight: 200;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .demo .main-title {
+       font-size: 3em;
+    }
+  }
+
+  .bclass
+  {
+    position: absolute; 
+    top: 150px; 
+    left: 75px
+  }
+  .bttnA {
+    position: relative;
+    display: block;
+    top : 10px;
+    left : 307px;
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    color: #fafdfd;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    padding: 1em 2em;
+    background: transparent;
+    border: 1px solid #babbbd;
+  }  
+  .bttnC {
+    position: absolute;
+    display: block;
+    top: 10px;
+    left : 800px;
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    color: #fafdfd;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    padding: 1em 2em;
+    background: transparent;
+    border: 1px solid #babbbd;
+  }  
+  .bttnW {
+    position: absolute;
+    display: block;
+    top: 10px;
+    left : 590px;
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    color: #fafdfd;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    padding: 1em 2em;
+    background: transparent;
+    border: 1px solid #babbbd;
+  }  
+  .bttnQ {
+    position: absolute;
+    display: block;
+    top: 10px;
+    left : 415px;
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    color: #fafdfd;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    padding: 1em 2em;
+    background: transparent;
+    border: 1px solid #babbbd;
+  }  
+  .btn-5::before,
+.btn-5::after {
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  background-color: #eaecf3;
+  content: ' ';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 1px;
+  height: 3px;
+}
+.btn-5::after {
+  top: auto;
+  left: auto;
+  right: -1px;
+  bottom: -1px;
+}
+.btn-5:hover {
+  color: #bae9e6;
+  border-bottom-color: #231f20;
+  border-top-color: #231f20;
+}
+.btn-5:hover::before,
+.btn-5:hover::after {
+  background-color: #231f20;
+  height: calc(100% + 1px);
+}
+.divA {
+    position: relative;
+    display: flex;
+    top : 30px;
+    left : 70px;
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    color: #fafdfd;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    padding: 1em 8em 1em 3em;
+    background: transparent;
+    border: 0.2px solid #555657;
+  }  
+.tab {position:relative;left:200px; }
+.tab2 {position:relative;left:65px; }
+.imgdiv 
+{
+  position: absolute;
+  top: 1px;
+  left: 870px;
+  width: 25%;
+  height: 300px;
+
+}
+.typewriter1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 1.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 40% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+.divW {
+  position: relative;
+  display: flex;
+  top : 30px;
+  left : 70px;
+  transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  color: #fafdfd;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  padding: 1em 12.25em 1em 3em;
+  background: transparent;
+  border: 0.2px solid #555657;
+}  
+.divC {
+  position: relative;
+  display: flex;
+  top : 30px;
+  left : 170px;
+  transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  color: #fafdfd;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  padding: 1em 5em 1em 5em;
+  background: transparent;
+  border: 0.2px solid #555657;
+}  
+.transition {
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+  }
+  .longTransition {
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+  }
+  .rel-wrapper {
+    position: relative;
+  }
+  .block-element {
+    display: block;
+  }
+  .no-underline {
+    text-decoration: none;
+  }
+  .no-margin {
+    margin: 0;
+  }
+  .inline-element {
+    display: inline-block;
+  }
+  .text-align-center {
+    text-align: center;
+  }
+  .small-font-size {
+    font-size: 0.85rem;
+  }
+  .normal-font-size {
+    font-size: 1rem;
+  }
+  .medium-font-size {
+    font-size: 1.25rem;
+  }
+  .medium-font-size2 {
+    font-size: 1.5rem;
+  }
+  .large-font-size {
+    font-size: 1.8rem;
+  }
+  .large-font-size2 {
+    font-size: 2rem;
+  }
+  .extra-large-font-size {
+    font-size: 2.5rem;
+  }
+  .extra-large-font-size2 {
+    font-size: 3rem;
+  }
+  .thin-font-weight {
+    font-weight: 100;
+  }
+  .light-font-weight {
+    font-weight: 300;
+  }
+  .normal-font-weight {
+    font-weight: 400;
+  }
+  .medium-font-weight {
+    font-weight: 500;
+  }
+  .semibold-font-weight {
+    font-weight: 600;
+  }
+  .bold-font-weight {
+    font-weight: 700;
+  }
+  .ultrabold-font-weight {
+    font-weight: 900;
+  }
+  .white-color-font {
+    color: #FFF;
+  }
+  .black-color-font {
+    color: #231f20;
+  }
+  .black-color-background {
+    background-color: #231f20;
+  }
+  .grey-color-font {
+    color: #6d6e71;
+  }
+  .grey-color-background {
+    background-color: #6d6e71;
+  }
+  @media only screen and (max-width : 768px)
+  {
+      .bttnA {
+          
+          padding: 5px;
+          left: -20px;
+          right: auto;
+      }
+      .bttnQ {
+       
+        top: 35px;
+        padding: 5px;
+        left: -20px;
+      }
+      .bttnW
+      {
+       padding: 4px;
+        top: 62px;
+        left: -20px;
+      }
+      .bttnC{
+       
+        padding: 5px;
+        top: 90px;
+        left: -20px;
+      }
+  }
+  @media only screen and (max-width: 768px){
+    .imgdiv{
+      position: absolute;
+      top: 460px;
+      left: 75px;
+      width: 45%;
+      height: 175px;
+    }
+    .divA {
+      top: 100px;
+      position: auto;
+      font-size: 0.75rem;
+      left: -40px ;
+      padding: 8px;
+      border: 0.2px solid #555657;;
+      background: transparent;
+      overflow: auto;
+    }
+    .divW {
+      top: 100px;
+      position: auto;
+      font-size: 0.75rem;
+      left: -45px;
+      padding: 8px;
+      border: 0.2px solid #555657;;
+      background: transparent;
+      overflow: auto;
+    }
+    .divC {
+      top: 100px;
+      position: auto;
+      font-size: 0.75rem;
+      left: -45px;
+      padding: 8px;
+      border: 0.2px solid #555657;;
+      background: transparent;
+      overflow: auto;
+    }
+    .tab {
+      left: auto;
+    }
+    .tab2{
+      left: auto;
+    }
+  }
